@@ -77,7 +77,7 @@
 
     5.返回到loadFactoryNames，通过factoryTypeName(ps:值为org.springframework.boot.autoconfigure.EnableAutoConfiguration),读取需要加载的配置，配置为对应需要自动加载的全类名
 
-  ![image-20200510011022700](..\..\learnMD\img\image-20200510011022700.png)
+  ![image-20200510011022700](https://raw.githubusercontent.com/zhuzhixu/learnMD/master/img/image-20200510011022700.png)
 
 ![image-20200510011149980](https://raw.githubusercontent.com/zhuzhixu/learnMD/master/img/image-20200510011149980.png)
 
