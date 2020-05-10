@@ -94,3 +94,25 @@ spring-boot-starter-web会自动加载这几个类，比如配置org.springframe
 ![image-20200510013511240](https://raw.githubusercontent.com/zhuzhixu/learnMD/master/img/image-20200510013511240.png)
 
 头上的注解表明是该加载类所必须的条件(spring自动配置注解开头已经贴图自己对应比较),只有所有条件成立该类才会进行自动配置。@ConditionalOnProperty可以在配置文件中进行配置,该配置都有默认值，如果没有自己配置那就会加载默认配置
+
+### 配置profile
+
+- #### javabean配置
+
+  在java bean中配置可以通过@Profile注解来指定该个bean为哪个profile
+
+  ![image-20200510175543916](https://raw.githubusercontent.com/zhuzhixu/learnMD/master/img/learnMD\img\image-20200510175543916.png)
+
+  > 缺点是有些bean需要在特定版本下注入，如果忘记添加注解会导致所有环境都对该bean进入注入
+
+* #### 外部配置文件配置
+
+  ![image-20200510180953126](https://raw.githubusercontent.com/zhuzhixu/learnMD/master/img/learnMD\img\image-20200510180953126.png)
+
+  properties方式来配置版本
+
+  ​	![image-20200510181256550](https://raw.githubusercontent.com/zhuzhixu/learnMD/master/img/learnMD\img\image-20200510181256550.png)
+
+  yml方式来配置版本
+
+  
