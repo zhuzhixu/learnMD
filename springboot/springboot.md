@@ -101,17 +101,17 @@ spring-boot-starter-web会自动加载这几个类，比如配置org.springframe
 
   在java bean中配置可以通过@Profile注解来指定该个bean为哪个profile
 
-  ![image-20200510175543916](https://raw.githubusercontent.com/zhuzhixu/learnMD/master/img/learnMD\img\image-20200510175543916.png)
+  ![image-20200510175543916](https://raw.githubusercontent.com/zhuzhixu/learnMD/master/img/learnMD/img/image-20200510175543916.png)
 
   > 缺点是有些bean需要在特定版本下注入，如果忘记添加注解会导致所有环境都对该bean进入注入
 
 * #### 外部配置文件配置
 
-  ![image-20200510180953126](https://raw.githubusercontent.com/zhuzhixu/learnMD/master/img/learnMD\img\image-20200510180953126.png)
+  ![image-20200510180953126](https://raw.githubusercontent.com/zhuzhixu/learnMD/master/img/learnMD/img/image-20200510180953126.png)
 
   properties方式来配置版本
 
-  ​	![image-20200510181256550](https://raw.githubusercontent.com/zhuzhixu/learnMD/master/img/learnMD\img\image-20200510181256550.png)
+  ​	![image-20200510181256550](https://raw.githubusercontent.com/zhuzhixu/learnMD/master/img/learnMD/img/image-20200510181256550.png)
 
   yml方式来配置版本
 
