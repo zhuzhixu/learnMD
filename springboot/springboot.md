@@ -59,23 +59,23 @@
   	}
   ```
 
-    1.debugger时直接进入了getAutoConfigurationEntry方法
+   5) .debugger时直接进入了getAutoConfigurationEntry方法
 
   ![image-20200510002837866](https://raw.githubusercontent.com/zhuzhixu/learnMD/master/img/image-20200510002837866.png)
 
-    2.获取configurations,进入getCandidateConfigurations方法
+    6) .获取configurations,进入getCandidateConfigurations方法
 
   ![image-20200510003152026](https://raw.githubusercontent.com/zhuzhixu/learnMD/master/img/image-20200510003152026.png)
 
-    3.进入loadFactoryNames方法
+    7) .进入loadFactoryNames方法
 
   ![image-20200510004423890](https://raw.githubusercontent.com/zhuzhixu/learnMD/master/img/image-20200510004423890.png)                   
 
-    4.进入loadSpringFactories方法，通过类加载器获取META-INF/spring.factories路径,PropertiesLoaderUtils把对应路径下的文件转成properties文件，将factoryTypeName作为key，该写properties文件值转换成list作为vlue存入map，并且将map存入缓存中
+   8) .进入loadSpringFactories方法，通过类加载器获取META-INF/spring.factories路径,PropertiesLoaderUtils把对应路径下的文件转成properties文件，将factoryTypeName作为key，该写properties文件值转换成list作为vlue存入map，并且将map存入缓存中
 
   ![image-20200510004730017](https://raw.githubusercontent.com/zhuzhixu/learnMD/master/img/image-20200510004730017.png)
 
-    5.返回到loadFactoryNames，通过factoryTypeName(ps:值为org.springframework.boot.autoconfigure.EnableAutoConfiguration),读取需要加载的配置，配置为对应需要自动加载的全类名
+    9) .返回到loadFactoryNames，通过factoryTypeName(ps:值为org.springframework.boot.autoconfigure.EnableAutoConfiguration),读取需要加载的配置，配置为对应需要自动加载的全类名
 
   ![image-20200510011022700](https://raw.githubusercontent.com/zhuzhixu/learnMD/master/img/image-20200510011022700.png)
 
